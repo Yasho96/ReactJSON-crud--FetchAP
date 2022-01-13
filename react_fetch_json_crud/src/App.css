@@ -1,0 +1,66 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.bg_img{
+  background-image: url("c1.jpg");
+}
+th,
+td {
+  background: silver;
+  padding: 10px;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+form.addC{
+  background: silver;
+  padding: 10px;
+}
+form.countries{
+  background: white;
+  padding: 10px;  
+}
+input{
+  background: white;
+  padding: 10px;
+  margin-right:20px;
+}
+table.center{ 
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+} 
+
+button.add{
+  background: white;
+  padding: 10px;
+  width: 150px;
+  border-radius: 12px;
+  
+}
+button.add:hover {
+  background-color: #077c24; 
+  color: white;
+}
+button.edit:hover {
+  background-color: #413d06; 
+  color: white;
+}
+   
+button.delete:hover {
+  background-color: #ee2929; 
+  color: white;
+}
+button.save:hover {
+  background-color: #712cf1;  
+  color: white;
+}
+button.cancel:hover {
+  background-color: #d46306; 
+  color: white;
+}
+   
