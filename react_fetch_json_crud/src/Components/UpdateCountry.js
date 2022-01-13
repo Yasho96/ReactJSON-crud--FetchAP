@@ -5,16 +5,24 @@ import { useState , useEffect } from 'react';
 function UpdateCountry({ children }){
 
     //set usestate for inputs
-    const [ id , setId ] = useState(children.id);
-    const [ name , setName ] = useState(children.name);
-    const [ currency , setCurrency ] = useState(children.currency);
-    const [ population , setPopulation ] = useState(children.population);
-    const [ flag_url , setflag_url ] = useState(children.flag_url);
-    const [ gdp , setGdp ] = useState(children.gdp);
+    const [ id , setId ] = useState('');
+    const [ name , setName ] = useState('');
+    const [ currency , setCurrency ] = useState('');
+    const [ population , setPopulation ] = useState('');
+    const [ flag_url , setflag_url ] = useState('');
+    const [ gdp , setGdp ] = useState('');
 
 
    console.log(children.name)
-    
+   useEffect(() => {
+    setId(children.id);
+    setName(children.name);
+    setCurrency(children.currency);
+    setPopulation(children.population);
+    setflag_url(children.flag_url);
+    setGdp(children.gdp);
+}, [children]);
+
     const handleSubmit = (e) => {
         const item = {id, name, currency, population, flag_url, gdp};
         console.log(item);
@@ -33,25 +41,15 @@ function UpdateCountry({ children }){
         return (
             <div>
                 {/*Update form*/}
-                <form class = "edit" onSubmit ={handleSubmit} >
-                    <h2>Update Countries</h2>
+                <form className = "addC" onSubmit ={handleSubmit} >
+                    <h4>Update Countries</h4>
                     <table>
-                        <thead>
-                            <tr>
-                                <th>Country Name</th>
-                                <th>Currency</th>
-                                <th>Population</th>
-                                <th>Flag Url</th>
-                                <th>GDP</th>  
-                                <th>Action</th>                              
-                            </tr>
-                        </thead>
                         <tbody>
                             <tr>
                                 <td>
                                     <input
                                         type = "text"
-                                        value = {children.name}
+                                        value = {name}
                                         placeholder = "Country Name"
                                         onChange = {(e) => setName(e.target.value)}
                                     />
@@ -59,7 +57,7 @@ function UpdateCountry({ children }){
                                 <td>
                                     <input
                                         type = "text"
-                                        value = {children.currency}
+                                        value = {currency}
                                         placeholder = "Currency"
                                         onChange = {(e) => setCurrency(e.target.value)}
                                     />
@@ -67,7 +65,7 @@ function UpdateCountry({ children }){
                                 <td>
                                     <input
                                         type = "text"
-                                        value = {children.population}
+                                        value = {population}
                                         placeholder = "Population"
                                         onChange = {(e) => setPopulation(e.target.value)}
                                     />
@@ -75,7 +73,7 @@ function UpdateCountry({ children }){
                                 <td>
                                     <input
                                         type = "text"
-                                        value = {children.flag_url}
+                                        value = {flag_url}
                                         placeholder = "Image URL"
                                         onChange = {(e) => setflag_url(e.target.value)}
                                     />
@@ -83,14 +81,14 @@ function UpdateCountry({ children }){
                                 <td>
                                     <input
                                         type = "text"
-                                        value = {children.gdp}
+                                        value = {gdp}
                                         placeholder = "GDP value"
                                         onChange = {(e) => setGdp(e.target.value)}
                                     />
                                 </td>
                                 <td>
-                                    <button class = "save" type="submit">Save</button>
-                                    <button class = "cancel" type="submit">Cancel</button>
+                                    <button className = "save" type="submit">Save</button>
+                                    <button className = "cancel" type="submit">Cancel</button>
                                 </td>
 
                             </tr>

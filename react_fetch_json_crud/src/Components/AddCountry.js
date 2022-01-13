@@ -34,8 +34,9 @@ return (
     <div className="AddCountry" >
 
       {/*Add form*/}
-      <form class = "add" onSubmit ={handleSubmit} >
-        <h2>Add Countries</h2>
+      <form class = "addC" onSubmit ={handleSubmit} >
+        <h2>Country details</h2>
+        <h4>Add Countries</h4>
         <input
           type = "text"
           value = {name}
