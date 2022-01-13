@@ -3,10 +3,10 @@ import { v4 as uuid } from "uuid";
 
 function AddCountry() {
 
-  const [ countryName, setCountryName ] = useState("");
+  const [ name, setname ] = useState("");
   const [ currency, setCurrency ] = useState("");
   const [ population, setPopulation ] = useState("");
-  const [ flagUrl, setFlagUrl ] = useState("");
+  const [ flag_url, setFlag_url ] = useState("");
   const [ gdp, setGdp ] = useState("");
 
 
@@ -14,10 +14,7 @@ function AddCountry() {
 
     e.preventDefault();
    
-    const id = uuid();
-
-   
-    const item = { id, countryName, currency, population, flagUrl, gdp };
+    const item = {name, currency, population, flag_url, gdp };
 
     console.log(item);
   
@@ -41,9 +38,9 @@ return (
         <h2>Add Countries</h2>
         <input
           type = "text"
-          value = {countryName}
+          value = {name}
           placeholder = "Country Name"
-          onChange = {(e) => setCountryName(e.target.value)}
+          onChange = {(e) => setname(e.target.value)}
         />
         <input
           type = "text"
@@ -59,9 +56,9 @@ return (
         />
         <input
           type = "text"
-          value = {flagUrl}
+          value = {flag_url}
           placeholder = "image URL"
-          onChange = {(e) => setFlagUrl(e.target.value)}
+          onChange = {(e) => setFlag_url(e.target.value)}
         />
         <input
           type = "text"

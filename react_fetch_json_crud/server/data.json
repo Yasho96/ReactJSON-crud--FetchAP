@@ -39,22 +39,6 @@
       "population": "329.5 million (2020)",
       "flag_url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2Fa%2Fa4%2FFlag_of_the_United_States.svg%2F1235px-Flag_of_the_United_States.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AFlag_of_the_United_States.svg&tbnid=pmB-TqlKV3UnEM&vet=12ahUKEwiJ-qLRqZz1AhXXi9gFHf9HDR8QMygAegUIARCsAQ..i&docid=uFIo2gXzoAQ0fM&w=1235&h=650&itg=1&q=US%20flag%20url&ved=2ahUKEwiJ-qLRqZz1AhXXi9gFHf9HDR8QMygAegUIARCsAQ",
       "gdp": "20.94 trillion USD (2020)"
-    },
-    {
-      "id": "34d6dc9b-1512-4d66-b627-faf298bd273b",
-      "name": "Sri Lanka",
-      "currency": "SL Rupee",
-      "population": "21 million",
-      "flag_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/640px-Flag_of_Sri_Lanka.svg.png",
-      "gdp": "21.33"
-    },
-    {
-      "id": "bcc8eeda-7fec-49ca-aa15-0c602c4fe5f8",
-      "countryName": "",
-      "currency": "",
-      "population": "",
-      "flagUrl": "",
-      "gdp": ""
     }
   ]
 }

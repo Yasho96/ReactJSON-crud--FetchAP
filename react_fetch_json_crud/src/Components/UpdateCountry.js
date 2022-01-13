@@ -20,7 +20,7 @@ function UpdateCountry({ children }){
         console.log(item);
 
          
-         fetch("http://localhost:3003/item/" + id, {
+         fetch("http://localhost:5000/item/" + id, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(item),
@@ -38,7 +38,6 @@ function UpdateCountry({ children }){
                     <table>
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>Country Name</th>
                                 <th>Currency</th>
                                 <th>Population</th>
@@ -49,14 +48,6 @@ function UpdateCountry({ children }){
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <input
-                                        type = "text"
-                                        value = {children.id}
-                                        placeholder = "ID"
-                                        onChange = {(e) => setId(e.target.value)}
-                                    />
-                                </td>
                                 <td>
                                     <input
                                         type = "text"
